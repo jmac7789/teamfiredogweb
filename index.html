@@ -5,31 +5,52 @@
 
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="style_sheet.css"/>
 	<title> Team Firedog Games - Home </title>
 	<link rel="shortcut icon" href="favicon.ico" />
 	<style type="text/css">
-		body {background-color:#FFF6F6;
-		}
 		a:link {text-decoration:none;
 		}
 		a:hover {text-decoration:underline;
 		}
-		
-		p {color:red;
-		   font-family:arial;
-		   font-weight:bold;
-		   font-style:italic;
+		a:visited {color:#000000
 		}
-		h1 {color:#FFF6F6;
-			text-align:center;
-			font-size:300%;
-			background-color:#C71400;
-			font-style:italic;
-			padding:20px;
+		#tophead {color:#000000;
+				  text-align:center;
+				  font-size:300%;
+				  background-color:#FF4141;
+				  font-style:italic;
+				  font-family:"impact";
+				  padding:20px;
+				  width:100%;
+				  position:fixed;
+				  top:0px;
+				  left:0px;
 			<!--
 			background-image:url(flamvellfiredog.png);
 			background-repeat:no-repeat;
 			background-position: 50% 0px; -->
+		}
+		#menubar {background-color:#FF4141;
+				  width:100%;
+				  top:116px;
+				  left:0px;
+				  position:fixed;
+				  padding:20px;
+		}
+		hr {border-top: 10px double #FF4141;
+		    width:100%;
+			position:fixed;
+			top:94px;
+			left:0px;
+		}
+		#top-ebay-link {position:fixed;
+						top:5px;
+						left:5px;
+		}
+		#top-insta-link {position:fixed;
+						 top:5px;
+						 right:5px;
 		}
 		table {text-align: center;
 			   align: center;
@@ -37,15 +58,23 @@
 		table.center {margin-left:auto;
 					  margin-right:auto;
 		}
+		p {color:red;
+		   font-family:arial;
+		   font-weight:bold;
+		   font-style:italic;
+		}
 	</style>
 </head>
 
 <body>
 <!-- empty a is anchor, destination -->
-<h1> <a name="top"></a> Team Firedog Games</h1>
+<div id="tophead"> <a name="top"></a> Team Firedog Games</div>
 <hr /> <!-- this is a line -->
-<br /> <!-- this is new line-->
+<div id="menubar"></div>
+<div id="top-ebay-link"><a href="https://www.ebay.com/sch/tigerdude9610/m.html?item=253036664424&hash=item3aea291668%3Ag%3A1WQAAOSwi1tZYjx6&rt=nc&_trksid=p2047675.l2562" title="eBay Store"><img src="ebayicon.png" height="30"</a></div>
+<div id="top-insta-link"><a href="https://www.instagram.com/teamfiredog/?hl=en" title="teamfiredog instagram"><img src="instagramlogo.png" height="30"/></a></div>
 
+<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> 
 <table class="center">
 	<th><a href="https://www.youtube.com/user/TeamFiredog" title="TeamFiredog Channel">Youtube Channel</a></th>
 	<th><a href="https://www.ebay.com/sch/tigerdude9610/m.html?item=253036664424&hash=item3aea291668%3Ag%3A1WQAAOSwi1tZYjx6&rt=nc&_trksid=p2047675.l2562" title="eBay Store">eBay Store</a></th>
@@ -67,12 +96,45 @@
 <br />
 <a href="second.html">Second Page</a>
 
+<!-- get or post -->
+<form action="\C:\xampp\htdocs\tfg_usernames.php" method="post"> 
+	Username: <input type="text" name="username" size="14" maxlength="15" value="Enter name here"/>
+	<br />
+	Password:  <input type="password" name="pword" size="14" maxlength="50"/>
+	<br / >
+	Male: <input type="radio" name="sex" value="male" />
+	Female: <input type="radio" name="sex" value="female" />
+	<br / >
+	<p>Select the foods that you would like to order!</p>
+	Bacon <input type="checkbox" name="food" value="bacon">
+	Ham <input type="checkbox" name="food" value="ham">
+	Tuna <input type="checkbox" name="food" value="tuna">
+	Soda <input type="checkbox" name="food" value="soda">
+	
+	What are you doing:
+	<select name="activities">
+		<option value="play">play guitar</option>
+		<option value="comb">comb your hair</option>
+		<option value="list">list item</option>
+		<option value="teach">teach</option>
+	</select>
+	<br />
+	Leave a comment:
+	<br />
+	<textarea name="comment" rows="8" cols="40"></textarea>
+	<br />
+	<p>Submit a file</p>
+	<input type="file" name="myfile"/>
+	<br / > <br / >
+	<input type="submit" value="Submit!"/>
+</form>
 
 
 
+<!-- this is new line-->
 <br /> <br />
 <br />
-
+<h1>hello <br /> hello <br />hello <br />hello <br />hello <br />hello <br />hello <br />hello <br />hello <br />hello <br />hello <br />hello <br />hello <br />hello <br /></h1>
 
 <br />
 <a href="#top">Back to Top</a>
