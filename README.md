@@ -2,4 +2,4 @@
 
 view the website here: www.teamfiredog.site
 
-Created from scratch 
+Learning html by working on this 
